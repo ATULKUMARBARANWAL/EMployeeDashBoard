@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-employee-table,
+  #print-employee-table * {
+    visibility: visible;
+  }
+
+  #print-employee-table {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
